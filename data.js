@@ -34,7 +34,7 @@ var APP_DATA = {
           "pitch": -0.06340843067462032,
           "rotation": 0,
           "target": "1-1_technopark",
-          "Question": "Wollt Ihr 32Peaks helfen, </br> den verschollenen Trainee zu finden? ",
+          "Question": "Wollt Ihr 32Peaks helfen, den verschollenen Trainee zu finden? ",
           "PosibleAnswares" : "<form>\n" +
               "\t\t<div class=\"form-check\">\n" +
               "\t\t\t<input class=\"form-check-input\" type=\"radio\"  name=\"Option-1-1_technopark\" value=\"A\" id=\"flexRadioDefault1\">\n" +
@@ -57,8 +57,15 @@ var APP_DATA = {
         {
           "yaw": -0.2590035583247463,
           "pitch": 0.13462481453125008,
-          "title": "Willkommen <button>Play Audio</button>",
-          "text": "Hoi Freunde!&nbsp;<div>Vielen Dank, dass Ihr gekommen seid, um uns zu helfen. Wir haben ein riesen Problem! In wenigen Tagen findet das Fürstenfest statt, eines der größten Feste in Liechtenstein. Und dieses Jahr haben wir sogar die großartige Möglichkeit bekommen, unseren Gin dort exklusiv anzubieten. Die Vorbereitungen laufen schon seit Wochen auf Hochtouren. Und jetzt das! Unser neuer Trainee, der sich hauptsächlich um die Organisation für das Fest gekümmert hat, ist verschwunden. Wie vom Erdboden verschluckt! Er reagiert nicht auf Anrufe, und wir machen uns langsam große Sorgen. Das letzte mal haben wir ihn gestern gesehen, als wir noch in unserer Lieblingsbar auf das kommende Fest angestoßen haben. Aber jetzt ist alles in Gefahr. Wir müssen sie unbedingt finden, hoffentlich ist ihr nichts zugestoßen. Könnt ihr uns helfen?" +
+          "title": "Hoi Freunde!",
+          "text": "<figure>\n" +
+              "    <audio\n" +
+              "        controls\n" +
+              "        src=\"/media/franco.ogg\">\n" +
+              "            Your browser does not support the\n" +
+              "            <code>audio</code> element.\n" +
+              "    </audio>\n" +
+              "</figure>"+"<div>Vielen Dank, dass Ihr gekommen seid, um uns zu helfen. Wir haben ein riesen Problem! In wenigen Tagen findet das Fürstenfest statt, eines der größten Feste in Liechtenstein. Und dieses Jahr haben wir sogar die großartige Möglichkeit bekommen, unseren Gin dort exklusiv anzubieten. Die Vorbereitungen laufen schon seit Wochen auf Hochtouren. Und jetzt das! Unser neuer Trainee, der sich hauptsächlich um die Organisation für das Fest gekümmert hat, ist verschwunden. Wie vom Erdboden verschluckt! Er reagiert nicht auf Anrufe, und wir machen uns langsam große Sorgen. Das letzte mal haben wir ihn gestern gesehen, als wir noch in unserer Lieblingsbar auf das kommende Fest angestoßen haben. Aber jetzt ist alles in Gefahr. Wir müssen sie unbedingt finden, hoffentlich ist ihr nichts zugestoßen. Könnt ihr uns helfen?" +
               "</div>"
         }
       ]
@@ -146,31 +153,31 @@ var APP_DATA = {
           "yaw": -0.01889285633430937,
           "pitch": -0.0031486119751988895,
           "title": "To-Do List",
-          "text": "Bild"
+          "text": "<img src=\"/media/todo.jpeg\" class=\"img-fluid\" alt=\"Responsive image\">"
         },
         {
           "yaw": 0.18978832867153983,
           "pitch": 0.2985218736834092,
           "title": "Start",
-          "text": "Link"
+          "text": "<a href=\"https://www.startvaduz.li/\" target=\"_blank\"> Zusätzliche Informationen</a>"
         },
         {
           "yaw": -0.2644852542788687,
           "pitch": 0.3267736355491131,
           "title": "Kalender",
-          "text": "Bild"
+          "text": "<img src=\"/media/calender.jpeg\" class=\"img-fluid\" alt=\"Responsive image\">"
         },
         {
           "yaw": 1.2356663112103057,
           "pitch": -0.16037961303617898,
           "title": "Technopark",
-          "text": "Link"
+          "text": "<a href=\"https://www.technopark-liechtenstein.li/\" target=\"_blank\"> Zusätzliche Informationen</a>"
         },
         {
           "yaw": 2.580603638276358,
           "pitch": 0.3154586124823098,
           "title": "Staatsfeiertag&nbsp;",
-          "text": "Link"
+          "text": "<a href=\"https://staatsfeiertag.li/\" target=\"_blank\"> Zusätzliche Informationen</a>"
         }
       ]
     },
@@ -271,37 +278,42 @@ var APP_DATA = {
           "yaw": -0.1039706669128222,
           "pitch": 0.08511261683053384,
           "title": "Franco",
-          "text": "Text"
+          "text": "Text",
+          "link" : "https://www.instagram.com/p/CQL-zFKsQ5Y/?utm_source=ig_web_copy_link"
         },
         {
           "yaw": -0.18415190458643949,
           "pitch": 0.15136275006445743,
           "title": "Bredi",
-          "text": "Text"
+          "text": "Text",
+          "link": "https://www.instagram.com/p/CP59ApsMvue/?utm_source=ig_web_copy_link"
+
         },
         {
           "yaw": 0.18256522452617396,
           "pitch": 0.0896249543679204,
           "title": "Daniel",
-          "text": "Text"
+          "text": "Text",
+          "link":"https://www.instagram.com/p/CPa8l_0ssPM/?utm_source=ig_web_copy_link"
         },
         {
           "yaw": 0.28371297827221476,
           "pitch": 0.1577632480028086,
           "title": "Trainee",
-          "text": "Text"
+          "text": "Text",
+          "link":"https://www.tiktok.com/@ginfluencerli?lang=de-DE&is_copy_url=1&is_from_webapp=v1"
         },
         {
           "yaw": 0.655919939364308,
           "pitch": 0.1684465529114636,
           "title": "Alwalser",
-          "text": "Song"
+          "text": "<iframe width=\"370\" height=\"210\" src=\"https://www.youtube.com/embed/KENj2UDR-So\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
         },
         {
           "yaw": -2.6798710941977575,
           "pitch": 0.4244032358950349,
           "title": "Gin Preparation",
-          "text": "Video"
+          "text": "<iframe width=\"370\" height=\"210\" src=\"https://www.youtube.com/embed/MBXB55SdQPc\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe"
         },
         {
           "yaw": 2.7777952912129127,
@@ -312,14 +324,21 @@ var APP_DATA = {
         {
           "yaw": 2.9952626078212594,
           "pitch": 0.29654201279860004,
-          "title": "Barkeeper&nbsp;",
-          "text": "Audio"
+          "title": "Barkeeper Audio&nbsp;",
+          "text": "<figure>\n" +
+              "\t<audio\n" +
+              "\t\tcontrols\n" +
+              "\t\tsrc = \"/media/barkeeper.ogg\">\n" +
+              "\t\tYour browser does not support the\n" +
+              "<code>audio</code> element.\n" +
+              "\t</audio>\n" +
+              "</figure>"
         },
         {
           "yaw": -2.8466466396787524,
           "pitch": -0.024763954489261053,
           "title": "Super",
-          "text": "Sehr gut, du hast den 32Peaks Gin gefunden. Hinweis: wir befinden uns in hier: Link zur Bar"
+          "text": "Sehr gut, du hast den 32Peaks Gin gefunden. Hinweis: wir befinden uns in hier: <a href=\"https://scanaua.li/\" target=\"_blank\"> Link zur Bar</a>"
         },
         {
           "yaw": -2.5771915614857797,
@@ -408,19 +427,21 @@ var APP_DATA = {
           "yaw": 0.11248885890118743,
           "pitch": -0.018041266782374166,
           "title": "Corona Zahlen",
-          "text": "Link"
+          "text": "<a href=\"https://www.google.com/search?q=corona+zahlen+liechtenstein\" target=\"_blank\"> Zusätzliche Informationen</a>"
         },
         {
           "yaw": 0.15970471709390743,
           "pitch": 0.26294752202400673,
           "title": "Tonic",
-          "text": "Link"
+          "text": "<a href=\"https://www.miomente.de/entdeckermagazin/welches-tonic-water-passt-zu-welchem-gin/\" target=\"_blank\"> Zusätzliche Informationen</a>"
+
         },
         {
           "yaw": 1.0309298301490735,
           "pitch": -0.20675490088442317,
           "title": "32Peaks",
-          "text": "TikTok"
+          "text": "TikTok",
+          "link": "https://www.tiktok.com/@ginfluencerli/video/6975219744383274245"
         }
       ]
     },
@@ -537,19 +558,26 @@ var APP_DATA = {
           "yaw": 0.2624008759186651,
           "pitch": -0.15474014096907673,
           "title": "Gin",
-          "text": "Link"
+          "text": "<iframe width=\"370\" height=\"210\" src=\"https://www.youtube.com/embed/vlAGM0jJZSM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
         },
         {
           "yaw": -2.156249840863614,
           "pitch": 0.3686509475444204,
-          "title": "Radio",
-          "text": "Text"
+          "title": "Liechtenstein",
+          "text": "<figure>\n" +
+              "\t<audio\n" +
+              "\t\tcontrols\n" +
+              "\t\tsrc = \"/media/Liechtenstein_Hymne.mp3\">\n" +
+              "\t\tYour browser does not support the\n" +
+              "<code>audio</code> element.\n" +
+              "\t</audio>\n" +
+              "</figure>"
         },
         {
           "yaw": -2.4155677168752803,
           "pitch": 0.3126013877889413,
           "title": "Mate",
-          "text": "Text"
+          "text": "<a href=\"https://www.mate-tee.de/Zubereitung-von-Mate-Tee:_:1000.html\" target=\"_blank\"> Zusätzliche Informationen</a>"
         }
       ]
     },
@@ -617,7 +645,7 @@ var APP_DATA = {
           "yaw": 0.11027622002190718,
           "pitch": 0.7742016550309572,
           "title": "LieMobiel",
-          "text": "Bild"
+          "text": "<img src=\"/media/liemobile.jpeg\" class=\"img-fluid\" alt=\"Responsive image\">"
         }
       ]
     },
@@ -697,37 +725,37 @@ var APP_DATA = {
           "yaw": -0.34751600814345096,
           "pitch": 0.08545254546010739,
           "title": "Schaan",
-          "text": "Link"
+          "text": "<a href=\"https://de.wikipedia.org/wiki/Pfarrkirche_St._Laurentius_(Schaan)\" target=\"_blank\"> Zusätzliche Informationen</a>"
         },
         {
           "yaw": -0.00918477098680981,
           "pitch": -0.36321445396964336,
           "title": "3 Schwestern",
-          "text": "Link"
+          "text": "<a href=\"https://www.bergfex.ch/sommer/liechtenstein-oberland/touren/wanderung/6245,fuerstensteig-drei-schwestern/#:~:text=Als%20die%20klassiche%20Bergtour%20schlechthin,mit%20dem%20F%C3%BCrstensteig%20bezeichnet%20werden.&text=Der%20F%C3%BCrstensteig%20und%20der%20Drei,und%20aussichtsreichen%20Gratweg%20verbunden%20sind.\" target=\"_blank\"> Zusätzliche Informationen</a>"
         },
         {
           "yaw": 0.531771785695188,
           "pitch": -0.34726227150779465,
           "title": "Fürstensteig&nbsp;",
-          "text": "Link"
+          "text": "<a href=\"https://www.schweizmobil.ch/de/wanderland/routen/route-0994.html\" target=\"_blank\"> Zusätzliche Informationen</a>"
         },
         {
           "yaw": 1.1140273464094328,
           "pitch": -0.04243193570859205,
           "title": "Uni",
-          "text": "Link"
+          "text": "<a href=\"https://www.uni.li/de\" target=\"_blank\"> Zusätzliche Informationen</a>"
         },
         {
           "yaw": -1.672158146697031,
           "pitch": -0.0790873619934267,
           "title": "Hoher Kasten",
-          "text": "Link"
+          "text": "<a href=\"https://www.hoherkasten.ch/entdecken/aktivitaeten/wandern/\" target=\"_blank\"> Zusätzliche Informationen</a>"
         },
         {
           "yaw": 1.823983500354168,
           "pitch": -0.060442956124965974,
           "title": "Pizol",
-          "text": "Link"
+          "text": "<a href=\"https://pizol.com/?lang=de_CH\" target=\"_blank\"> Zusätzliche Informationen</a>"
         }
       ]
     },
@@ -766,12 +794,14 @@ var APP_DATA = {
           "pitch": 0.9493790442877756,
           "rotation": 0,
           "target": "7-7_fuerstensteig",
-          "Question":"",
-          "PosibleAnswares" :"<form>\n" +
+          "Question":"Finde den Trainee",
+          "PosibleAnswares" :
+              "<img src=\"/media/findTrainee.jpg\" class=\"img-fluid\" alt=\"Responsive image\">" +
+              "<form>\n" +
               "\t<div class=\"form-check\">\n" +
               "\t\t<input class=\"form-check-input\" type=\"radio\"  name=\"Option-8-8_fuerstensteig\" value=\"A\" id=\"flexRadioDefault73\">\n" +
               "\t\t<label class=\"form-check-label\" for=\"flexRadioDefault73\">\n" +
-              "\t\t\tA2\n" +
+              "\t\t\tC2\n" +
               "\t\t</label>\n" +
               "\t</div>\n" +
               "\t<div class=\"form-check\">\n" +
@@ -783,7 +813,7 @@ var APP_DATA = {
               "\t<div class=\"form-check\">\n" +
               "\t\t<input class=\"form-check-input\" type=\"radio\" name=\"Option-8-8_fuerstensteig\" value=\"C\" id=\"flexRadioDefault75\">\n" +
               "\t\t<label class=\"form-check-label\" for=\"flexRadioDefault75\">\n" +
-              "\t\t\tC2\n" +
+              "\t\t\tA3\n" +
               "\t\t</label>\n" +
               "\t</div>\n" +
               "\t<input type=\"button\" id=\"btn-8-8_fuerstensteig\" class=\"btn btn-light\" value=\"Next!\"/>\n" +
@@ -796,7 +826,7 @@ var APP_DATA = {
     {
       "id": "8-8_fuerstensteig",
       "name": "8-Fuerstensteig",
-
+      "CorrectAnswer": "C",
       "levels": [
         {
           "tileSize": 256,
@@ -833,19 +863,19 @@ var APP_DATA = {
               "\t<div class=\"form-check\">\n" +
               "\t\t<input class=\"form-check-input\" type=\"radio\"  name=\"Option-9-9_ende\" value=\"A\" id=\"flexRadioDefault83\">\n" +
               "\t\t<label class=\"form-check-label\" for=\"flexRadioDefault83\">\n" +
-              "\t\t\tA2\n" +
+              "\t\t\t110\n" +
               "\t\t</label>\n" +
               "\t</div>\n" +
               "\t<div class=\"form-check\">\n" +
               "\t\t<input class=\"form-check-input\" type=\"radio\" name=\"Option-9-9_ende\" value=\"B\" id=\"flexRadioDefault84\">\n" +
               "\t\t<label class=\"form-check-label\" for=\"flexRadioDefault84\">\n" +
-              "\t\t\tB3\n" +
+              "\t\t\t32 16 8\n" +
               "\t\t</label>\n" +
               "\t</div>\n" +
               "\t<div class=\"form-check\">\n" +
               "\t\t<input class=\"form-check-input\" type=\"radio\" name=\"Option-9-9_ende\" value=\"C\" id=\"flexRadioDefault85\">\n" +
               "\t\t<label class=\"form-check-label\" for=\"flexRadioDefault85\">\n" +
-              "\t\t\tC2\n" +
+              "\t\t\t117\n" +
               "\t\t</label>\n" +
               "\t</div>\n" +
               "\t<input type=\"button\" id=\"btn-9-9_ende\" class=\"btn btn-light\" value=\"Next!\"/>\n" +
