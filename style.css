@@ -428,6 +428,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   pointer-events: all;
 }
 
+
 /* Fallback mode without pointer-events (IE8-10) */
 .tooltip-fallback .link-hotspot-tooltip {
   display: none;
@@ -834,4 +835,19 @@ body.view-control-buttons .viewControlButton {
 }
 .viewControlButton-6 {
   margin-left: 105px;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #ffd7a3;
+  border-bottom: 1px solid #ffd7a3;
+}
+a:visited {
+  color: #ffd7a3;
+  border-bottom: 1px solid #ffd7a3;
+}
+a:hover {
+  color: #ffd7a3;
+  border-bottom: 1px solid #ffd7a3;
 }

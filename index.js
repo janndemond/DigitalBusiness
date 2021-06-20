@@ -268,7 +268,8 @@
     // Create image element.
     var icon = document.createElement('img');
     icon.src = 'img/link.png';
-    if (hotspot.id==="6-6_panorama"){
+    if (hotspot.target==="7-7_fuerstensteig"){
+
       icon.src = 'img/info.png';
     }
 
@@ -360,7 +361,13 @@
       var hotspot = findSceneById(id);
       // If the answare is correct, go to next scene
       if(hotspot.data.CorrectAnswer.toUpperCase() ===  selectedValue.toUpperCase()){
-        switchScene(hotspot);
+        debugger
+        if (hotspot.data.id ==="9-9_ende"){
+          window.open("https://www.janndemond.com/media/9_Ende.jpg", '_blank').focus();
+        }
+        else  {
+          switchScene(hotspot);
+        }
       }
       else{
         alert("Incorrect")

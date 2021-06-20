@@ -383,7 +383,7 @@ var APP_DATA = {
           "pitch": 0.10428788172190195,
           "rotation": 0,
           "target": "4-4_destillerie",
-          "Question": "Wohin ist der Trainee nach der Bar gegangen?",
+          "Question": "Wohin ist er nach der Bar gegangen?",
           "PosibleAnswares" :"\n" +
               "<form>\n" +
               "\t<div class=\"form-check\">\n" +
@@ -539,7 +539,7 @@ var APP_DATA = {
               "\t<div class=\"form-check\">\n" +
               "\t\t<input class=\"form-check-input\" type=\"radio\" name=\"Option-5-5_steinraum\" value=\"J\" id=\"flexRadioDefault311\">\n" +
               "\t\t<label class=\"form-check-label\" for=\"flexRadioDefault311\">\n" +
-              "\t\t\tLorbeere\n" +
+              "\t\t\tLorbeer Blätter\n" +
               "\t\t</label>\n" +
               "\t</div>\n" +
               "\t<div class=\"form-check\">\n" +
@@ -679,13 +679,7 @@ var APP_DATA = {
         "fov": 1.4041062726189781
       },
       "linkHotspots": [
-        {
-          "yaw": -0.43996007274554927,
-          "pitch": 1.3722135929806054,
-          "rotation": 0,
-          "target": "2-2_bar"
-        },
-        {
+       {
           "yaw": 0.8997122222876524,
           "pitch": -0.1989241659073251,
           "rotation": 0,
@@ -719,7 +713,7 @@ var APP_DATA = {
           "yaw": -0.6625805215547764,
           "pitch": -0.06499558151755025,
           "title": "Gamprin",
-          "text": "Link"
+          "text": "<a href=\"hthttps://www.gamprin.li/gemeinde/ueber-gamprin-bendern/unser-dorf/\" target=\"_blank\"> Zusätzliche Informationen</a>"
         },
         {
           "yaw": -0.34751600814345096,
