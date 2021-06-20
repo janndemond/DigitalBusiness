@@ -178,6 +178,13 @@
   controls.registerMethod('inElement',    new Marzipano.ElementPressControlMethod(viewInElement,  'zoom', -velocity, friction), true);
   controls.registerMethod('outElement',   new Marzipano.ElementPressControlMethod(viewOutElement, 'zoom',  velocity, friction), true);
 
+  var hotspotQuestionButtons = document.querySelectorAll("input[id^=\"btn-\"]");
+  hotspotQuestionButtons.forEach(function(item){
+
+    addHotspotLink(item)
+  });
+
+
   function sanitize(s) {
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;');
   }
@@ -200,6 +207,7 @@
       var el = sceneElements[i];
       if (el.getAttribute('data-id') === scene.data.id) {
         el.classList.add('current');
+        el.classList.remove('hide');
       } else {
         el.classList.remove('current');
       }
@@ -254,6 +262,10 @@
     // Create image element.
     var icon = document.createElement('img');
     icon.src = 'img/link.png';
+    if (hotspot.id==="6-6_panorama"){
+      icon.src = 'img/info.png';
+    }
+
     icon.classList.add('link-hotspot-icon');
 
     // Set rotation transform.
@@ -265,25 +277,65 @@
 
     // Add click event handler.
     wrapper.addEventListener('click', function() {
-      switchScene(findSceneById(hotspot.target));
+
+
     });
 
     // Prevent touch and scroll events from reaching the parent element.
     // This prevents the view control logic from interfering with the hotspot.
     stopTouchAndScrollEventPropagation(wrapper);
 
+
+
+
     // Create tooltip element.
     var tooltip = document.createElement('div');
     tooltip.classList.add('hotspot-tooltip');
     tooltip.classList.add('link-hotspot-tooltip');
-    tooltip.innerHTML = findSceneDataById(hotspot.target).name;
+
+    var hotspotData = findSceneDataById(hotspot.target)
+
+    tooltip.innerHTML = "<h3>"+hotspot.Question  +"</h3>"+ hotspot.PosibleAnswares;
 
     wrapper.appendChild(icon);
     wrapper.appendChild(tooltip);
 
     return wrapper;
   }
+  function addHotspotLink (item) {
 
+    var id = item.id;
+    id = id.replace("btn-","");
+    var hotspotData = findSceneDataById(id);
+    var btn = document.querySelector('#btn-'+hotspotData.id);
+    // handle click button
+    btn.addEventListener('click', function() {
+      // Get next scene
+      var inputName = "Option-"+hotspotData.id
+      const rbs = document.querySelectorAll('input[name='+ CSS.escape(inputName) + ']');
+      let selectedValue;
+
+      for (const rb of rbs) {
+        // Get selected multiple choice option
+        if (rb.checked) {
+          selectedValue = rb.value;
+          break;
+        }
+
+      }
+      var hotspot = findSceneById(id);
+      // If the answare is correct, go to next scene
+      if(hotspot.data.CorrectAnswer.toUpperCase() ===  selectedValue.toUpperCase()){
+        switchScene(hotspot);
+      }
+      else{
+        alert("Incorrect")
+      }
+
+
+
+    });
+  }
   function createInfoHotspotElement(hotspot) {
 
     // Create wrapper element to hold icon and tooltip.
@@ -342,6 +394,10 @@
     var toggle = function() {
       wrapper.classList.toggle('visible');
       modal.classList.toggle('visible');
+      if (hotspot.link){
+        window.open(hotspot.link)
+      }
+
     };
 
     // Show content when hotspot is clicked.

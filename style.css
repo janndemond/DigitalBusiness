@@ -328,7 +328,9 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   background-color: rgb(103,115,131);
   background-color: rgba(103,115,131,0.8);
 }
-
+#sceneList .scene.hide {
+ display: none;
+}
 /* Hide scene list when only a single scene exists */
 body.single-scene #sceneList, body.single-scene #sceneListToggle {
   display: none;
@@ -361,6 +363,10 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   cursor: pointer;
 }
 
+
+.form-check {
+  margin-top:0.125rem;
+}
 .link-hotspot-tooltip {
   position: absolute;
   left: 100%;
@@ -370,7 +376,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
   font-size: 16px;
 
-  max-width: 300px;
+  max-width: 500px;
 
   padding: 8px 10px;
 
@@ -504,6 +510,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   height: 90%;
   margin: 5%;
 }
+
 
 .info-hotspot .info-hotspot-title-wrapper {
   position: absolute;
